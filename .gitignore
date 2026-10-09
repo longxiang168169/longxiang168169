@@ -1,0 +1,13 @@
+# Python / QMT runtime artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Generated QMT snapshots and audit logs
+qmt_theme_v5/output/*
+!qmt_theme_v5/output/.gitkeep
+
+# Local deployment and editor settings
+.vscode/
+.idea/
+*.log

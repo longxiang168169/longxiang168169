@@ -1,0 +1,21 @@
+{
+  "schema_version": 5,
+  "description": "V5 盘前自动通过 C.get_stock_list_in_sector 同步成分股。请将 sectors 校正为本机 QMT 中真实、可检索的板块名称；同一题材可合并多个概念板块。",
+  "themes": {
+    "人工智能": {
+      "sectors": ["人工智能", "AI应用"],
+      "enabled": true,
+      "notes": "示例名称；部署前以本机 QMT 板块树实际名称为准。"
+    },
+    "机器人": {
+      "sectors": ["机器人概念", "减速器"],
+      "enabled": true,
+      "notes": "示例名称。"
+    },
+    "半导体": {
+      "sectors": ["半导体", "芯片概念"],
+      "enabled": true,
+      "notes": "示例名称。"
+    }
+  }
+}

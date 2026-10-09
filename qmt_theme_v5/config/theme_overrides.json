@@ -1,0 +1,24 @@
+{
+  "schema_version": 5,
+  "description": "人工覆盖与自动扫描合并。禁止以覆盖文件绕过题材共振、龙头地位、封板与资金承接硬风控。",
+  "global": {
+    "rules": {
+      "max_active_themes": 3
+    }
+  },
+  "themes": {
+    "示例禁用题材": {
+      "action": "disable",
+      "notes": "action: auto（默认）、disable（完全禁用）、watch/force_watch（仅观察，不能强制交易）。",
+      "include_stocks": [],
+      "exclude_stocks": [],
+      "min_strength": 70
+    },
+    "示例重点观察题材": {
+      "action": "watch",
+      "notes": "只改变观察名单，不会放行交易。",
+      "include_stocks": [],
+      "exclude_stocks": []
+    }
+  }
+}
