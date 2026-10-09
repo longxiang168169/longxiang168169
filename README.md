@@ -4,6 +4,17 @@
 >
 > 这是迅投 QMT / miniQMT 的 A 股超短线打板策略升级包。它把“有题材、有共振、有龙头、有资金承接”的主观纪律固化为可审计的盘前数据流程和盘中硬闸门；**人工覆盖文件不能绕过硬风控**。
 
+## QMT 直接载入：单文件版本
+
+如果希望像常规 QMT 策略一样只载入一个 `.py` 文件，请使用仓库根目录的
+`qmt_theme_board_v5_single_file.py`。它不依赖 `theme_engine.py` 或其他本地 Python
+模块；首次运行时会在 `C:\qmt_theme_v5` 自动创建 `theme_catalog.json` 和
+`theme_overrides.json`，并将盘前快照、有效题材依据和闸门审计日志写入该目录。
+
+载入前仅需在文件 `init(C)` 内填写 `g.acct`，然后按本机 QMT 板块树修改首次生成的
+`theme_catalog.json`。策略默认 `g.live_order_enabled = False`，因此可直接在模拟环境
+观察运行日志而不会发送订单。
+
 ## 功能概览
 
 | 模块 | V5 行为 | 目的 |
